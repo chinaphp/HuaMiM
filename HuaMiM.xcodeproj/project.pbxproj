@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A517232814BF26F900555A02 /* appIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = A517232714BF26F900555A02 /* appIcon.icns */; };
+		A517232D14BF27B100555A02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A517232F14BF27B100555A02 /* main.m */; };
+		A517233014BF27D400555A02 /* HMMWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A517233114BF27D400555A02 /* HMMWindow.m */; };
+		A51B9EAA14B2D6540029E8CD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51B9EA914B2D6540029E8CD /* Cocoa.framework */; };
+		A51B9EB414B2D6540029E8CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A51B9EB214B2D6540029E8CD /* InfoPlist.strings */; };
+		A51B9EBD14B2D6540029E8CD /* HMMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A51B9EBC14B2D6540029E8CD /* HMMAppDelegate.m */; };
+		A51B9EC014B2D6540029E8CD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A51B9EBE14B2D6540029E8CD /* MainMenu.xib */; };
+		A51B9EC314B2D6540029E8CD /* HuaMiM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A51B9EC114B2D6540029E8CD /* HuaMiM.xcdatamodeld */; };
+		A51B9ECB14B2D6550029E8CD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51B9ECA14B2D6550029E8CD /* SenTestingKit.framework */; };
+		A51B9ECC14B2D6550029E8CD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51B9EA914B2D6540029E8CD /* Cocoa.framework */; };
+		A51B9EF714B2E7AB0029E8CD /* HMMView.m in Sources */ = {isa = PBXBuildFile; fileRef = A51B9EF614B2E7AB0029E8CD /* HMMView.m */; };
+		A540681B14BD7AC80063D87E /* close_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = A540681814BD7AC80063D87E /* close_btn_h.png */; };
+		A540681C14BD7AC80063D87E /* close_btn_n.png in Resources */ = {isa = PBXBuildFile; fileRef = A540681914BD7AC80063D87E /* close_btn_n.png */; };
+		A540681D14BD7AC80063D87E /* close_btn_p.png in Resources */ = {isa = PBXBuildFile; fileRef = A540681A14BD7AC80063D87E /* close_btn_p.png */; };
+		A540682514BD86830063D87E /* HMMButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A540682414BD86830063D87E /* HMMButton.m */; };
+		A5AB1E3B14BDD39400CF392B /* copy_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB1E3814BDD39400CF392B /* copy_btn_h.png */; };
+		A5AB1E3C14BDD39400CF392B /* copy_btn_n.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB1E3914BDD39400CF392B /* copy_btn_n.png */; };
+		A5AB1E3D14BDD39400CF392B /* copy_btn_p.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB1E3A14BDD39400CF392B /* copy_btn_p.png */; };
+		A5AB1E4014BDDB1700CF392B /* id_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB1E3E14BDDB1700CF392B /* id_icon.png */; };
+		A5AB1E4114BDDB1700CF392B /* pwd_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB1E3F14BDDB1700CF392B /* pwd_icon.png */; };
+		A5AB1E4F14BDE6A900CF392B /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB1E4E14BDE6A900CF392B /* bg.png */; };
+		A5D5131914BEF8250020166D /* status_icn_alt.png in Resources */ = {isa = PBXBuildFile; fileRef = A5D5131714BEF8250020166D /* status_icn_alt.png */; };
+		A5D5131A14BEF8250020166D /* status_icn.png in Resources */ = {isa = PBXBuildFile; fileRef = A5D5131814BEF8250020166D /* status_icn.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A51B9ECD14B2D6550029E8CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A51B9E9C14B2D6540029E8CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A51B9EA414B2D6540029E8CD;
+			remoteInfo = HuaMiM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A517232714BF26F900555A02 /* appIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = appIcon.icns; sourceTree = "<group>"; };
+		A517232E14BF27B100555A02 /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/main.m; sourceTree = "<group>"; };
+		A517233114BF27D400555A02 /* HMMWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMMWindow.m; sourceTree = "<group>"; };
+		A517233214BF2AF500555A02 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.xib"; sourceTree = "<group>"; };
+		A51B9EA514B2D6540029E8CD /* HuaMiM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuaMiM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51B9EA914B2D6540029E8CD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A51B9EAC14B2D6540029E8CD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A51B9EAD14B2D6540029E8CD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A51B9EAE14B2D6540029E8CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A51B9EB114B2D6540029E8CD /* HuaMiM-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HuaMiM-Info.plist"; sourceTree = "<group>"; };
+		A51B9EB314B2D6540029E8CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A51B9EB714B2D6540029E8CD /* HuaMiM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HuaMiM-Prefix.pch"; sourceTree = "<group>"; };
+		A51B9EBB14B2D6540029E8CD /* HMMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMMAppDelegate.h; sourceTree = "<group>"; };
+		A51B9EBC14B2D6540029E8CD /* HMMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMMAppDelegate.m; sourceTree = "<group>"; };
+		A51B9EBF14B2D6540029E8CD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A51B9EC214B2D6540029E8CD /* HuaMiM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HuaMiM.xcdatamodel; sourceTree = "<group>"; };
+		A51B9EC914B2D6550029E8CD /* HuaMiMTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuaMiMTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51B9ECA14B2D6550029E8CD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A51B9EE814B2DA710029E8CD /* HMMWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMMWindow.h; sourceTree = "<group>"; };
+		A51B9EF514B2E7AB0029E8CD /* HMMView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMMView.h; sourceTree = "<group>"; };
+		A51B9EF614B2E7AB0029E8CD /* HMMView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMMView.m; sourceTree = "<group>"; };
+		A540681814BD7AC80063D87E /* close_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_btn_h.png; sourceTree = "<group>"; };
+		A540681914BD7AC80063D87E /* close_btn_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_btn_n.png; sourceTree = "<group>"; };
+		A540681A14BD7AC80063D87E /* close_btn_p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_btn_p.png; sourceTree = "<group>"; };
+		A540682314BD86830063D87E /* HMMButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMMButton.h; sourceTree = "<group>"; };
+		A540682414BD86830063D87E /* HMMButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMMButton.m; sourceTree = "<group>"; };
+		A5AB1E3814BDD39400CF392B /* copy_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = copy_btn_h.png; sourceTree = "<group>"; };
+		A5AB1E3914BDD39400CF392B /* copy_btn_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = copy_btn_n.png; sourceTree = "<group>"; };
+		A5AB1E3A14BDD39400CF392B /* copy_btn_p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = copy_btn_p.png; sourceTree = "<group>"; };
+		A5AB1E3E14BDDB1700CF392B /* id_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = id_icon.png; sourceTree = "<group>"; };
+		A5AB1E3F14BDDB1700CF392B /* pwd_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pwd_icon.png; sourceTree = "<group>"; };
+		A5AB1E4E14BDE6A900CF392B /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		A5D5131714BEF8250020166D /* status_icn_alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status_icn_alt.png; sourceTree = "<group>"; };
+		A5D5131814BEF8250020166D /* status_icn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status_icn.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A51B9EA214B2D6540029E8CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51B9EAA14B2D6540029E8CD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51B9EC514B2D6550029E8CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51B9ECB14B2D6550029E8CD /* SenTestingKit.framework in Frameworks */,
+				A51B9ECC14B2D6550029E8CD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A51B9E9A14B2D6540029E8CD = {
+			isa = PBXGroup;
+			children = (
+				A517232714BF26F900555A02 /* appIcon.icns */,
+				A51B9EAF14B2D6540029E8CD /* HuaMiM */,
+				A51B9EA814B2D6540029E8CD /* Frameworks */,
+				A51B9EA614B2D6540029E8CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A51B9EA614B2D6540029E8CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A51B9EA514B2D6540029E8CD /* HuaMiM.app */,
+				A51B9EC914B2D6550029E8CD /* HuaMiMTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A51B9EA814B2D6540029E8CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A51B9EA914B2D6540029E8CD /* Cocoa.framework */,
+				A51B9ECA14B2D6550029E8CD /* SenTestingKit.framework */,
+				A51B9EAB14B2D6540029E8CD /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A51B9EAB14B2D6540029E8CD /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A51B9EAC14B2D6540029E8CD /* AppKit.framework */,
+				A51B9EAD14B2D6540029E8CD /* CoreData.framework */,
+				A51B9EAE14B2D6540029E8CD /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A51B9EAF14B2D6540029E8CD /* HuaMiM */ = {
+			isa = PBXGroup;
+			children = (
+				A51B9EBB14B2D6540029E8CD /* HMMAppDelegate.h */,
+				A51B9EBC14B2D6540029E8CD /* HMMAppDelegate.m */,
+				A540682314BD86830063D87E /* HMMButton.h */,
+				A540682414BD86830063D87E /* HMMButton.m */,
+				A51B9EF514B2E7AB0029E8CD /* HMMView.h */,
+				A51B9EF614B2E7AB0029E8CD /* HMMView.m */,
+				A51B9EE814B2DA710029E8CD /* HMMWindow.h */,
+				A517233114BF27D400555A02 /* HMMWindow.m */,
+				A51B9EC114B2D6540029E8CD /* HuaMiM.xcdatamodeld */,
+				A51B9EBE14B2D6540029E8CD /* MainMenu.xib */,
+				A540681614BD7AA10063D87E /* Resources */,
+				A51B9EB014B2D6540029E8CD /* Supporting Files */,
+			);
+			path = HuaMiM;
+			sourceTree = "<group>";
+		};
+		A51B9EB014B2D6540029E8CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A51B9EB114B2D6540029E8CD /* HuaMiM-Info.plist */,
+				A51B9EB214B2D6540029E8CD /* InfoPlist.strings */,
+				A517232F14BF27B100555A02 /* main.m */,
+				A51B9EB714B2D6540029E8CD /* HuaMiM-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A540681614BD7AA10063D87E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A540681714BD7AC80063D87E /* images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A540681714BD7AC80063D87E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A5D5131714BEF8250020166D /* status_icn_alt.png */,
+				A5D5131814BEF8250020166D /* status_icn.png */,
+				A5AB1E4E14BDE6A900CF392B /* bg.png */,
+				A5AB1E3E14BDDB1700CF392B /* id_icon.png */,
+				A5AB1E3F14BDDB1700CF392B /* pwd_icon.png */,
+				A5AB1E3814BDD39400CF392B /* copy_btn_h.png */,
+				A5AB1E3914BDD39400CF392B /* copy_btn_n.png */,
+				A5AB1E3A14BDD39400CF392B /* copy_btn_p.png */,
+				A540681814BD7AC80063D87E /* close_btn_h.png */,
+				A540681914BD7AC80063D87E /* close_btn_n.png */,
+				A540681A14BD7AC80063D87E /* close_btn_p.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A51B9EA414B2D6540029E8CD /* HuaMiM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A51B9EDA14B2D6550029E8CD /* Build configuration list for PBXNativeTarget "HuaMiM" */;
+			buildPhases = (
+				A51B9EA114B2D6540029E8CD /* Sources */,
+				A51B9EA214B2D6540029E8CD /* Frameworks */,
+				A51B9EA314B2D6540029E8CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HuaMiM;
+			productName = HuaMiM;
+			productReference = A51B9EA514B2D6540029E8CD /* HuaMiM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A51B9EC814B2D6550029E8CD /* HuaMiMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A51B9EDD14B2D6550029E8CD /* Build configuration list for PBXNativeTarget "HuaMiMTests" */;
+			buildPhases = (
+				A51B9EC414B2D6550029E8CD /* Sources */,
+				A51B9EC514B2D6550029E8CD /* Frameworks */,
+				A51B9EC614B2D6550029E8CD /* Resources */,
+				A51B9EC714B2D6550029E8CD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A51B9ECE14B2D6550029E8CD /* PBXTargetDependency */,
+			);
+			name = HuaMiMTests;
+			productName = HuaMiMTests;
+			productReference = A51B9EC914B2D6550029E8CD /* HuaMiMTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A51B9E9C14B2D6540029E8CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = A51B9E9F14B2D6540029E8CD /* Build configuration list for PBXProject "HuaMiM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+			);
+			mainGroup = A51B9E9A14B2D6540029E8CD;
+			productRefGroup = A51B9EA614B2D6540029E8CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A51B9EA414B2D6540029E8CD /* HuaMiM */,
+				A51B9EC814B2D6550029E8CD /* HuaMiMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A51B9EA314B2D6540029E8CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51B9EB414B2D6540029E8CD /* InfoPlist.strings in Resources */,
+				A51B9EC014B2D6540029E8CD /* MainMenu.xib in Resources */,
+				A540681B14BD7AC80063D87E /* close_btn_h.png in Resources */,
+				A540681C14BD7AC80063D87E /* close_btn_n.png in Resources */,
+				A540681D14BD7AC80063D87E /* close_btn_p.png in Resources */,
+				A5AB1E3B14BDD39400CF392B /* copy_btn_h.png in Resources */,
+				A5AB1E3C14BDD39400CF392B /* copy_btn_n.png in Resources */,
+				A5AB1E3D14BDD39400CF392B /* copy_btn_p.png in Resources */,
+				A5AB1E4014BDDB1700CF392B /* id_icon.png in Resources */,
+				A5AB1E4114BDDB1700CF392B /* pwd_icon.png in Resources */,
+				A5AB1E4F14BDE6A900CF392B /* bg.png in Resources */,
+				A5D5131914BEF8250020166D /* status_icn_alt.png in Resources */,
+				A5D5131A14BEF8250020166D /* status_icn.png in Resources */,
+				A517232814BF26F900555A02 /* appIcon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51B9EC614B2D6550029E8CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A51B9EC714B2D6550029E8CD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A51B9EA114B2D6540029E8CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A517232D14BF27B100555A02 /* main.m in Sources */,
+				A51B9EBD14B2D6540029E8CD /* HMMAppDelegate.m in Sources */,
+				A51B9EC314B2D6540029E8CD /* HuaMiM.xcdatamodeld in Sources */,
+				A517233014BF27D400555A02 /* HMMWindow.m in Sources */,
+				A51B9EF714B2E7AB0029E8CD /* HMMView.m in Sources */,
+				A540682514BD86830063D87E /* HMMButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51B9EC414B2D6550029E8CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A51B9ECE14B2D6550029E8CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A51B9EA414B2D6540029E8CD /* HuaMiM */;
+			targetProxy = A51B9ECD14B2D6550029E8CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A517232F14BF27B100555A02 /* main.m */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A517232E14BF27B100555A02 /* en */,
+			);
+			name = main.m;
+			sourceTree = "<group>";
+		};
+		A51B9EB214B2D6540029E8CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51B9EB314B2D6540029E8CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A51B9EBE14B2D6540029E8CD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51B9EBF14B2D6540029E8CD /* en */,
+				A517233214BF2AF500555A02 /* zh-Hans */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A51B9ED814B2D6550029E8CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A51B9ED914B2D6550029E8CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A51B9EDB14B2D6550029E8CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HuaMiM/HuaMiM-Prefix.pch";
+				INFOPLIST_FILE = "HuaMiM/HuaMiM-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A51B9EDC14B2D6550029E8CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HuaMiM/HuaMiM-Prefix.pch";
+				INFOPLIST_FILE = "HuaMiM/HuaMiM-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A51B9EDE14B2D6550029E8CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HuaMiM.app/Contents/MacOS/HuaMiM";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HuaMiM/HuaMiM-Prefix.pch";
+				INFOPLIST_FILE = "HuaMiMTests/HuaMiMTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A51B9EDF14B2D6550029E8CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HuaMiM.app/Contents/MacOS/HuaMiM";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HuaMiM/HuaMiM-Prefix.pch";
+				INFOPLIST_FILE = "HuaMiMTests/HuaMiMTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A51B9E9F14B2D6540029E8CD /* Build configuration list for PBXProject "HuaMiM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51B9ED814B2D6550029E8CD /* Debug */,
+				A51B9ED914B2D6550029E8CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A51B9EDA14B2D6550029E8CD /* Build configuration list for PBXNativeTarget "HuaMiM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51B9EDB14B2D6550029E8CD /* Debug */,
+				A51B9EDC14B2D6550029E8CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A51B9EDD14B2D6550029E8CD /* Build configuration list for PBXNativeTarget "HuaMiMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51B9EDE14B2D6550029E8CD /* Debug */,
+				A51B9EDF14B2D6550029E8CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A51B9EC114B2D6540029E8CD /* HuaMiM.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A51B9EC214B2D6540029E8CD /* HuaMiM.xcdatamodel */,
+			);
+			currentVersion = A51B9EC214B2D6540029E8CD /* HuaMiM.xcdatamodel */;
+			path = HuaMiM.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A51B9E9C14B2D6540029E8CD /* Project object */;
+}
