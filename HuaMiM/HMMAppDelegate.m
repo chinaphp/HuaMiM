@@ -201,6 +201,7 @@
 -(IBAction) showMainWindow:(id)sender
 {
     [NSApp unhide];
+    [[self window] orderFront:nil];
     [NSApp activateIgnoringOtherApps:YES];
 }
 
