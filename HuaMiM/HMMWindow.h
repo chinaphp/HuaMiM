@@ -8,20 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
+@class HMMSecureTextField;
 @class HMMButton;
 @class HMMStatusItemView;
+@class HMMTFDelegate;
 
 @interface HMMWindow : NSWindow
 {
     IBOutlet HMMButton*   copyBtn;
     IBOutlet HMMButton*   closeBtn;
     
-    IBOutlet NSTextField*       resultLabel;
-    IBOutlet NSTextField*       idLabel;
-    IBOutlet NSTextField*       pwdCountLabel;
-    IBOutlet NSSecureTextField* pwdLabel;
+    IBOutlet NSTextField* resultLabel;
+    IBOutlet NSTextField* idLabel;
+    IBOutlet NSTextField* pwdCountLabel;
+    IBOutlet HMMSecureTextField* pwdLabel;
     
-    IBOutlet NSMenu*            statusMenu;
+    IBOutlet NSMenu*      statusMenu;
     
     HMMStatusItemView* statusView;
     
@@ -35,9 +37,8 @@
 -(IBAction) idLabelEnterPressed:(id) sender;
 -(IBAction) cancelOperation:(id) sender; 
 
--(NSTextField*) getPwdLabel;
+-(HMMSecureTextField*) getPwdLabel;
 -(NSTextField*) getIdLabel;
-
 @end
 
 @interface HMMWindowDelegate : NSObject<NSWindowDelegate>

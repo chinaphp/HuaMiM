@@ -7,6 +7,8 @@
 //
 
 #import "HMMAppDelegate.h"
+#import "HMMWindow.h"
+#import "HMMSecureTextField.h"
 
 @implementation HMMAppDelegate
 
@@ -200,9 +202,18 @@
 
 -(IBAction) showMainWindow:(id)sender
 {
+    HMMWindow* w = [self window];
     [NSApp unhide];
-    [[self window] orderFront:nil];
+    [w orderFront:nil];
     [NSApp activateIgnoringOtherApps:YES];
+    
+    HMMSecureTextField* pwd = [w getPwdLabel];
+    if ([[pwd stringValue] length] == 0)
+    {
+        [w makeFirstResponder:pwd];
+    } else {
+        [w makeFirstResponder:[w getIdLabel]];
+    }
 }
 
 @end

@@ -9,6 +9,7 @@
 #import "HMMView.h"
 #import "HMMAppDelegate.h"
 #import "HMMWindow.h"
+#import "HMMSecureTextField.h"
 
 @interface HMMView()
 {
@@ -63,13 +64,13 @@
     HMMAppDelegate*  d = [NSApp delegate];
     HMMWindow*       w = (HMMWindow*) [d window];
     
-    if (field == [w getPwdLabel]) { 
+    if (field == [w getPwdLabel]) {
+        [[w getPwdLabel] updateString];
         [w updatePwdCount];
     }
     
     [w calcPassword];
 }
-
 @end
 
 @interface HMMStatusItemView()

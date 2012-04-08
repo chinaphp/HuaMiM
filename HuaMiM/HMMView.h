@@ -12,7 +12,7 @@
 @end
 
 
-@interface HMMTFDelegate : NSObject<NSControlTextEditingDelegate> 
+@interface HMMTFDelegate : NSObject<NSControlTextEditingDelegate>
 -(void) controlTextDidChange:(NSNotification*) n;
 @end
 

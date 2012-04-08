@@ -28,6 +28,7 @@
 		A5AB1E4014BDDB1700CF392B /* id_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB1E3E14BDDB1700CF392B /* id_icon.png */; };
 		A5AB1E4114BDDB1700CF392B /* pwd_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB1E3F14BDDB1700CF392B /* pwd_icon.png */; };
 		A5AB1E4F14BDE6A900CF392B /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB1E4E14BDE6A900CF392B /* bg.png */; };
+		A5C33A301531BCE1009ED924 /* HMMSecureTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C33A2F1531BCE1009ED924 /* HMMSecureTextField.m */; };
 		A5D5131914BEF8250020166D /* status_icn_alt.png in Resources */ = {isa = PBXBuildFile; fileRef = A5D5131714BEF8250020166D /* status_icn_alt.png */; };
 		A5D5131A14BEF8250020166D /* status_icn.png in Resources */ = {isa = PBXBuildFile; fileRef = A5D5131814BEF8250020166D /* status_icn.png */; };
 /* End PBXBuildFile section */
@@ -46,7 +47,6 @@
 		A517232714BF26F900555A02 /* appIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = appIcon.icns; sourceTree = "<group>"; };
 		A517232E14BF27B100555A02 /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/main.m; sourceTree = "<group>"; };
 		A517233114BF27D400555A02 /* HMMWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMMWindow.m; sourceTree = "<group>"; };
-		A517233214BF2AF500555A02 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.xib"; sourceTree = "<group>"; };
 		A51B9EA514B2D6540029E8CD /* HuaMiM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuaMiM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51B9EA914B2D6540029E8CD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A51B9EAC14B2D6540029E8CD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -75,6 +75,9 @@
 		A5AB1E3E14BDDB1700CF392B /* id_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = id_icon.png; sourceTree = "<group>"; };
 		A5AB1E3F14BDDB1700CF392B /* pwd_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pwd_icon.png; sourceTree = "<group>"; };
 		A5AB1E4E14BDE6A900CF392B /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		A5C33A2E1531BCE1009ED924 /* HMMSecureTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMMSecureTextField.h; sourceTree = "<group>"; };
+		A5C33A2F1531BCE1009ED924 /* HMMSecureTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMMSecureTextField.m; sourceTree = "<group>"; };
+		A5C33A311531DD08009ED924 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.xib"; sourceTree = "<group>"; };
 		A5D5131714BEF8250020166D /* status_icn_alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status_icn_alt.png; sourceTree = "<group>"; };
 		A5D5131814BEF8250020166D /* status_icn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status_icn.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +149,8 @@
 				A51B9EBC14B2D6540029E8CD /* HMMAppDelegate.m */,
 				A540682314BD86830063D87E /* HMMButton.h */,
 				A540682414BD86830063D87E /* HMMButton.m */,
+				A5C33A2E1531BCE1009ED924 /* HMMSecureTextField.h */,
+				A5C33A2F1531BCE1009ED924 /* HMMSecureTextField.m */,
 				A51B9EF514B2E7AB0029E8CD /* HMMView.h */,
 				A51B9EF614B2E7AB0029E8CD /* HMMView.m */,
 				A51B9EE814B2DA710029E8CD /* HMMWindow.h */,
@@ -319,6 +324,7 @@
 				A517233014BF27D400555A02 /* HMMWindow.m in Sources */,
 				A51B9EF714B2E7AB0029E8CD /* HMMView.m in Sources */,
 				A540682514BD86830063D87E /* HMMButton.m in Sources */,
+				A5C33A301531BCE1009ED924 /* HMMSecureTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +366,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A51B9EBF14B2D6540029E8CD /* en */,
-				A517233214BF2AF500555A02 /* zh-Hans */,
+				A5C33A311531DD08009ED924 /* zh-Hans */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";

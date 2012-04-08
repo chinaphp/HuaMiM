@@ -19,6 +19,13 @@
 
 @implementation HMMButton
 
+-(void) dealloc
+{
+    [normalBg release];
+    [hoverBg release];
+    [trackingArea release];
+}
+
 -(void) setPressedBg:(NSImage*) image
 {
     [[self cell] setAlternateImage:image];

@@ -9,6 +9,7 @@
 #import "HMMWindow.h"
 #import "HMMButton.h"
 #import "HMMView.h"
+#import "HMMSecureTextField.h"
 #import <CommonCrypto/CommonHMAC.h>
 
 void transformHMAC(unsigned char* len16, unsigned char* len32);
@@ -129,7 +130,7 @@ void transformHMAC(unsigned char* len16, unsigned char* len32)
 
 -(void) updatePwdCount
 {
-    NSUInteger count = [[pwdLabel stringValue] length];
+    NSUInteger count = [[pwdLabel realStringValue] length];
     [pwdCountLabel setStringValue:[NSString stringWithFormat:@"%d", count]];
 }
 
@@ -138,14 +139,14 @@ void transformHMAC(unsigned char* len16, unsigned char* len32)
     return idLabel;
 }
 
--(NSTextField*) getPwdLabel
+-(HMMSecureTextField*) getPwdLabel
 {
     return pwdLabel;
 }
 
 -(void) calcPassword
 {
-    if ([[pwdLabel stringValue] length]== 0 ||
+    if ([[pwdLabel realStringValue] length]== 0 ||
         [[idLabel stringValue] length] == 0)
     {
         [resultLabel setStringValue:@""];
@@ -162,7 +163,7 @@ void transformHMAC(unsigned char* len16, unsigned char* len32)
         unsigned char trans3[CC_MD5_DIGEST_LENGTH + CC_MD5_DIGEST_LENGTH];
         
         const char* k = [[idLabel stringValue] UTF8String];
-        const char* d = [[pwdLabel stringValue] UTF8String];
+        const char* d = [[pwdLabel realStringValue] UTF8String];
         
         CCHmac(kCCHmacAlgMD5, k, strlen(k), d, strlen(d), hmacRes1);
         transformHMAC(hmacRes1, trans1);
@@ -264,7 +265,7 @@ void transformHMAC(unsigned char* len16, unsigned char* len32)
         [idLabel becomeFirstResponder];
         [idLabel selectText:w];
     } else {
-        NSTextField* pwdLabel = [w getPwdLabel];
+        HMMSecureTextField* pwdLabel = [w getPwdLabel];
         [pwdLabel becomeFirstResponder];
     }
 }

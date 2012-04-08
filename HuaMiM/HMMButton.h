@@ -10,6 +10,8 @@
 
 @interface HMMButton : NSButton
 
+-(void) dealloc;
+
 -(void) setPressedBg:(NSImage*) pressedBg;
 -(void) setNormalBg: (NSImage*) normalBg;
 -(void) setHoveredBg:(NSImage*) hoverBg;
