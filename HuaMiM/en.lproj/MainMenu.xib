@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
-		<int key="IBDocument.SystemTarget">1070</int>
+		<int key="IBDocument.SystemTarget">1060</int>
 		<string key="IBDocument.SystemVersion">11C74</string>
 		<string key="IBDocument.InterfaceBuilderVersion">1938</string>
 		<string key="IBDocument.AppKitVersion">1138.23</string>
@@ -60,7 +60,7 @@
 						<object class="NSTextField" id="141072747">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">266</int>
-							<string key="NSFrame">{{38, 36}, {105, 21}}</string>
+							<string key="NSFrame">{{38, 36}, {145, 21}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="553678178"/>
@@ -201,6 +201,7 @@
 							<string key="NSFrame">{{154, 6}, {35, 20}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView"/>
 							<int key="NSViewLayerContentsRedrawPolicy">2</int>
 							<string key="NSReuseIdentifierKey">_NS:2485</string>
 							<bool key="NSEnabled">YES</bool>
@@ -478,7 +479,7 @@
 				<array class="NSMutableArray" key="NSMenuItems">
 					<object class="NSMenuItem" id="426625222">
 						<reference key="NSMenu" ref="62275015"/>
-						<string key="NSTitle">自动复制</string>
+						<string key="NSTitle">Auto copy</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
 						<int key="NSState">1</int>
@@ -493,7 +494,7 @@
 					</object>
 					<object class="NSMenuItem" id="167879556">
 						<reference key="NSMenu" ref="62275015"/>
-						<string key="NSTitle">点击复制按钮后关闭</string>
+						<string key="NSTitle">Close after pressing copy button</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
 						<int key="NSState">1</int>
@@ -502,7 +503,7 @@
 					</object>
 					<object class="NSMenuItem" id="27414050">
 						<reference key="NSMenu" ref="62275015"/>
-						<string key="NSTitle">关闭后清除密码</string>
+						<string key="NSTitle">Clear Password after close</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
 						<reference key="NSOnImage" ref="920104955"/>
@@ -518,9 +519,28 @@
 						<reference key="NSOnImage" ref="920104955"/>
 						<reference key="NSMixedImage" ref="604266055"/>
 					</object>
+					<object class="NSMenuItem" id="139936096">
+						<reference key="NSMenu" ref="62275015"/>
+						<string key="NSTitle">About HuaMiM</string>
+						<string key="NSKeyEquiv"/>
+						<int key="NSMnemonicLoc">2147483647</int>
+						<reference key="NSOnImage" ref="920104955"/>
+						<reference key="NSMixedImage" ref="604266055"/>
+					</object>
+					<object class="NSMenuItem" id="694151197">
+						<reference key="NSMenu" ref="62275015"/>
+						<bool key="NSIsDisabled">YES</bool>
+						<bool key="NSIsSeparator">YES</bool>
+						<string key="NSTitle"/>
+						<string key="NSKeyEquiv"/>
+						<int key="NSKeyEquivModMask">1048576</int>
+						<int key="NSMnemonicLoc">2147483647</int>
+						<reference key="NSOnImage" ref="920104955"/>
+						<reference key="NSMixedImage" ref="604266055"/>
+					</object>
 					<object class="NSMenuItem" id="921988691">
 						<reference key="NSMenu" ref="62275015"/>
-						<string key="NSTitle">退出</string>
+						<string key="NSTitle">Quit</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
 						<reference key="NSOnImage" ref="920104955"/>
@@ -637,6 +657,14 @@
 						<reference key="destination" ref="972006081"/>
 					</object>
 					<int key="connectionID">532</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">showAboutWindow:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="139936096"/>
+					</object>
+					<int key="connectionID">715</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -902,6 +930,8 @@
 							<reference ref="167879556"/>
 							<reference ref="331462911"/>
 							<reference ref="27414050"/>
+							<reference ref="139936096"/>
+							<reference ref="694151197"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -948,6 +978,16 @@
 						<reference key="object" ref="933619750"/>
 						<reference key="parent" ref="396859661"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">711</int>
+						<reference key="object" ref="139936096"/>
+						<reference key="parent" ref="62275015"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">712</int>
+						<reference key="object" ref="694151197"/>
+						<reference key="parent" ref="62275015"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -962,6 +1002,7 @@
 				<string key="372.CustomClassName">HMMView</string>
 				<string key="372.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="494.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="540.CustomClassName">HMMTextField</string>
 				<string key="540.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<real value="-1" key="540.IBViewIntegration.shadowOffsetHeight"/>
 				<real value="0.0" key="540.IBViewIntegration.shadowOffsetWidth"/>
@@ -999,12 +1040,14 @@
 				<real value="-1" key="699.IBViewIntegration.shadowOffsetHeight"/>
 				<real value="0.0" key="699.IBViewIntegration.shadowOffsetWidth"/>
 				<string key="700.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="711.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="712.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">710</int>
+			<int key="maxID">715</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1013,11 +1056,16 @@
 					<string key="superclassName">NSObject</string>
 					<dictionary class="NSMutableDictionary" key="actions">
 						<string key="saveAction:">id</string>
+						<string key="showAboutWindow:">id</string>
 						<string key="showMainWindow:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
 						<object class="IBActionInfo" key="saveAction:">
 							<string key="name">saveAction:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="showAboutWindow:">
+							<string key="name">showAboutWindow:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="showMainWindow:">
@@ -1051,7 +1099,7 @@
 				</object>
 				<object class="IBPartialClassDescription">
 					<string key="className">HMMSecureTextField</string>
-					<string key="superclassName">NSTextField</string>
+					<string key="superclassName">NSSecureTextField</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/HMMSecureTextField.h</string>
@@ -1063,6 +1111,14 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/HMMTFDelegate.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">HMMTextField</string>
+					<string key="superclassName">NSTextField</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/HMMTextField.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
@@ -1098,12 +1154,11 @@
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="closeBtn">HMMButton</string>
 						<string key="copyBtn">HMMButton</string>
-						<string key="idLabel">NSTextField</string>
+						<string key="idLabel">HMMTextField</string>
 						<string key="pwdCountLabel">NSTextField</string>
 						<string key="pwdLabel">HMMSecureTextField</string>
 						<string key="resultLabel">NSTextField</string>
 						<string key="statusMenu">NSMenu</string>
-						<string key="tfDelegate">HMMTFDelegate</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="closeBtn">
@@ -1116,7 +1171,7 @@
 						</object>
 						<object class="IBToOneOutletInfo" key="idLabel">
 							<string key="name">idLabel</string>
-							<string key="candidateClassName">NSTextField</string>
+							<string key="candidateClassName">HMMTextField</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="pwdCountLabel">
 							<string key="name">pwdCountLabel</string>
@@ -1133,10 +1188,6 @@
 						<object class="IBToOneOutletInfo" key="statusMenu">
 							<string key="name">statusMenu</string>
 							<string key="candidateClassName">NSMenu</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="tfDelegate">
-							<string key="name">tfDelegate</string>
-							<string key="candidateClassName">HMMTFDelegate</string>
 						</object>
 					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
@@ -1156,6 +1207,10 @@
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaFramework</string>
+		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
+			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin.macosx</string>
+			<real value="1060" key="NS.object.0"/>
+		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">

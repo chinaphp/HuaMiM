@@ -8,15 +8,21 @@
 
 #import <AppKit/AppKit.h>
 
+@interface HMMTextField : NSTextField
+-(BOOL) becomeFirstResponder;
+@end
+
+#ifdef SECURETF_ALLOW_IME
 @interface HMMSecureTextField : NSTextField <NSTextViewDelegate>
+-(BOOL) textView:(NSTextView*)v shouldChangeTextInRange:(NSRange)r replacementString:(NSString*) s;
 -(void) dealloc;
 -(void) awakeFromNib;
+#else
+@interface HMMSecureTextField : NSSecureTextField
+#endif
 
--(BOOL) becomeFirstResponder;
--(BOOL) resignFirstResponder;
-
--(NSMutableString*) realStringValue;
+-(NSString*) realStringValue;
 -(void) updateString;
-
--(BOOL) textView:(NSTextView*)v shouldChangeTextInRange:(NSRange)r replacementString:(NSString*) s;
+-(BOOL) becomeFirstResponder;
 @end
+

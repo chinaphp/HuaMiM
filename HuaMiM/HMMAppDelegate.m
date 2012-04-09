@@ -203,9 +203,12 @@
 -(IBAction) showMainWindow:(id)sender
 {
     HMMWindow* w = [self window];
+    
+    [NSApp activateIgnoringOtherApps:YES];
     [NSApp unhide];
     [w orderFront:nil];
-    [NSApp activateIgnoringOtherApps:YES];
+    [w makeMainWindow];
+    [w makeKeyWindow];
     
     HMMSecureTextField* pwd = [w getPwdLabel];
     if ([[pwd stringValue] length] == 0)
@@ -215,5 +218,14 @@
         [w makeFirstResponder:[w getIdLabel]];
     }
 }
+
+-(IBAction) showAboutWindow:(id)sender
+{
+    [NSApp activateIgnoringOtherApps:YES];
+    [NSApp unhide];
+    [NSApp orderFrontStandardAboutPanel:sender];
+}
+
+
 
 @end

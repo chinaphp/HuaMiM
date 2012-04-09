@@ -8,9 +8,27 @@
 
 #import "HMMSecureTextField.h"
 
+@implementation HMMTextField
+-(BOOL) becomeFirstResponder
+{
+    BOOL success = [super becomeFirstResponder];
+    if (success)
+    {
+        // Strictly spoken, NSText (which currentEditor returns) doesn't
+        // implement setInsertionPointColor:, but it's an NSTextView in practice.
+        // But let's be paranoid, better show an invisible black-on-black cursor
+        // than crash.
+        NSTextView* v = (NSTextView*) [self currentEditor];
+        if ([v respondsToSelector: @selector(setInsertionPointColor:)])
+            [v setInsertionPointColor:[NSColor whiteColor]];
+    }
+    return success;
+}
+@end
+
+#ifdef SECURETF_ALLOW_IME
 @interface HMMSecureTextField() {
     @private
-        BOOL editing;
         NSRange lastRange;
         NSString* replacement;
         NSMutableString* currentStr;
@@ -30,14 +48,6 @@
 {
     [currentStr release];
     [replacement release];
-}
-
--(BOOL) resignFirstResponder {
-    BOOL success = [super resignFirstResponder];
-    if (success) { 
-        editing = NO;
-    }
-    return success;
 }
 
 -(BOOL) becomeFirstResponder
@@ -136,3 +146,31 @@
     return TRUE;
 }
 @end
+#else
+@implementation HMMSecureTextField
+-(BOOL) becomeFirstResponder
+{
+    BOOL success = [super becomeFirstResponder];
+    if (success)
+    {
+        // Strictly spoken, NSText (which currentEditor returns) doesn't
+        // implement setInsertionPointColor:, but it's an NSTextView in practice.
+        // But let's be paranoid, better show an invisible black-on-black cursor
+        // than crash.
+        NSTextView* v = (NSTextView*) [self currentEditor];
+        if ([v respondsToSelector: @selector(setInsertionPointColor:)])
+            [v setInsertionPointColor:[NSColor whiteColor]];
+    }
+    return success;
+}
+
+-(NSString*) realStringValue
+{
+    return [self stringValue];
+}
+-(void) updateString
+{
+    
+}
+@end
+#endif

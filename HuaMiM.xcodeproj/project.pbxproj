@@ -28,6 +28,7 @@
 		A5AB1E4014BDDB1700CF392B /* id_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB1E3E14BDDB1700CF392B /* id_icon.png */; };
 		A5AB1E4114BDDB1700CF392B /* pwd_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB1E3F14BDDB1700CF392B /* pwd_icon.png */; };
 		A5AB1E4F14BDE6A900CF392B /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB1E4E14BDE6A900CF392B /* bg.png */; };
+		A5B9692515327BE100D8B618 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A5B9692415327BE100D8B618 /* Credits.rtf */; };
 		A5C33A301531BCE1009ED924 /* HMMSecureTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C33A2F1531BCE1009ED924 /* HMMSecureTextField.m */; };
 		A5D5131914BEF8250020166D /* status_icn_alt.png in Resources */ = {isa = PBXBuildFile; fileRef = A5D5131714BEF8250020166D /* status_icn_alt.png */; };
 		A5D5131A14BEF8250020166D /* status_icn.png in Resources */ = {isa = PBXBuildFile; fileRef = A5D5131814BEF8250020166D /* status_icn.png */; };
@@ -75,6 +76,7 @@
 		A5AB1E3E14BDDB1700CF392B /* id_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = id_icon.png; sourceTree = "<group>"; };
 		A5AB1E3F14BDDB1700CF392B /* pwd_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pwd_icon.png; sourceTree = "<group>"; };
 		A5AB1E4E14BDE6A900CF392B /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		A5B9692415327BE100D8B618 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		A5C33A2E1531BCE1009ED924 /* HMMSecureTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMMSecureTextField.h; sourceTree = "<group>"; };
 		A5C33A2F1531BCE1009ED924 /* HMMSecureTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMMSecureTextField.m; sourceTree = "<group>"; };
 		A5C33A311531DD08009ED924 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.xib"; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 		A51B9EB014B2D6540029E8CD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A5B9692415327BE100D8B618 /* Credits.rtf */,
 				A51B9EB114B2D6540029E8CD /* HuaMiM-Info.plist */,
 				A51B9EB214B2D6540029E8CD /* InfoPlist.strings */,
 				A517232F14BF27B100555A02 /* main.m */,
@@ -285,6 +288,7 @@
 				A5D5131914BEF8250020166D /* status_icn_alt.png in Resources */,
 				A5D5131A14BEF8250020166D /* status_icn.png in Resources */,
 				A517232814BF26F900555A02 /* appIcon.icns in Resources */,
+				A5B9692515327BE100D8B618 /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,10 +426,13 @@
 		A51B9EDB14B2D6550029E8CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HuaMiM/HuaMiM-Prefix.pch";
 				INFOPLIST_FILE = "HuaMiM/HuaMiM-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.6;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -433,10 +440,13 @@
 		A51B9EDC14B2D6550029E8CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HuaMiM/HuaMiM-Prefix.pch";
 				INFOPLIST_FILE = "HuaMiM/HuaMiM-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.6;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

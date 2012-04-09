@@ -19,5 +19,6 @@
 
 -(IBAction) saveAction:(id)sender;
 -(IBAction) showMainWindow:(id)sender;
+-(IBAction) showAboutWindow:(id)sender;
 
 @end

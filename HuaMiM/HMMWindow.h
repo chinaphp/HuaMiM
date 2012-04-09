@@ -12,16 +12,17 @@
 @class HMMButton;
 @class HMMStatusItemView;
 @class HMMTFDelegate;
+@class HMMTextField;
 
 @interface HMMWindow : NSWindow
 {
     IBOutlet HMMButton*   copyBtn;
     IBOutlet HMMButton*   closeBtn;
     
-    IBOutlet NSTextField* resultLabel;
-    IBOutlet NSTextField* idLabel;
-    IBOutlet NSTextField* pwdCountLabel;
+    IBOutlet NSTextField*        resultLabel;
+    IBOutlet NSTextField*        pwdCountLabel;
     IBOutlet HMMSecureTextField* pwdLabel;
+    IBOutlet HMMTextField*       idLabel;
     
     IBOutlet NSMenu*      statusMenu;
     
