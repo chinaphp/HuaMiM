@@ -83,55 +83,58 @@ void transformHMAC(unsigned char* len16, unsigned char* len32)
 {
     [super awakeFromNib];
     
+    [pwdLabel setFocusRingType:NSFocusRingTypeNone];
+    
     NSBundle*  mainB = [NSBundle mainBundle];
     NSString*  path  = nil;
     NSImage*   image = nil;
     
-    path  = [mainB pathForImageResource:@"close_btn_n.png"];
+    path  = [mainB pathForImageResource:@"close_btn_n"];
     image = [[NSImage alloc] initWithContentsOfFile:path];
     [closeBtn setNormalBg:image];
     [image release];
     
-    path  = [mainB pathForImageResource:@"close_btn_h.png"];
+    path  = [mainB pathForImageResource:@"close_btn_h"];
     image = [[NSImage alloc] initWithContentsOfFile:path];
     [closeBtn setHoveredBg:image];
     [image release];
     
-    path  = [mainB pathForImageResource:@"close_btn_p.png"];
+    path  = [mainB pathForImageResource:@"close_btn_p"];
     image = [[NSImage alloc] initWithContentsOfFile:path];
     [closeBtn setPressedBg:image];
     [image release];
     
-    path  = [mainB pathForImageResource:@"copy_btn_n.png"];
+    path  = [mainB pathForImageResource:@"copy_btn_n"];
     image = [[NSImage alloc] initWithContentsOfFile:path];
     [copyBtn setNormalBg:image];
     [image release];
     
-    path  = [mainB pathForImageResource:@"copy_btn_h.png"];
+    path  = [mainB pathForImageResource:@"copy_btn_h"];
     image = [[NSImage alloc] initWithContentsOfFile:path];
     [copyBtn setHoveredBg:image];
     [image release];
     
-    path  = [mainB pathForImageResource:@"copy_btn_p.png"];
+    path  = [mainB pathForImageResource:@"copy_btn_p"];
     image = [[NSImage alloc] initWithContentsOfFile:path];
     [copyBtn setPressedBg:image];
     [image release];
     [copyBtn setHidden:[[pref valueForKey:@"autoCopy"] boolValue]];
     
     statusView = [[HMMStatusItemView alloc] initWithMenu:statusMenu];
-    [statusView setImage:[NSImage imageNamed:@"status_icn.png"]];
-    [statusView setAlternativeImage:[NSImage imageNamed:@"status_icn_alt.png"]];
+    [statusView setImage:[NSImage imageNamed:@"status_icn"]];
+    [statusView setAlternativeImage:[NSImage imageNamed:@"status_icn_alt"]];
 }
 
 -(void) dealloc
 {
     [statusView release];
+    [super dealloc];
 }
 
 -(void) updatePwdCount
 {
     NSUInteger count = [[pwdLabel realStringValue] length];
-    [pwdCountLabel setStringValue:[NSString stringWithFormat:@"%d", count]];
+    [pwdCountLabel setStringValue:[NSString stringWithFormat:@"%u", count]];
 }
 
 -(NSTextField*) getIdLabel

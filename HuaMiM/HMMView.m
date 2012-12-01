@@ -11,18 +11,12 @@
 #import "HMMWindow.h"
 #import "HMMSecureTextField.h"
 
-@interface HMMView()
-{
-    @private
-        NSImage* bg;
-}
-@end
-
 @implementation HMMView
 
 -(void) dealloc
 {
     [bg release];
+    [super dealloc];
 }
 
 -(void) awakeFromNib
@@ -73,16 +67,6 @@
 }
 @end
 
-@interface HMMStatusItemView()
-{
-    NSImage*      image;
-    NSImage*      alt;
-    BOOL          showingMenu;
-    
-    NSStatusItem* statusItem;
-    NSMenu*       menu;
-}
-@end
 @implementation HMMStatusItemView
 
 -(id) initWithMenu:(NSMenu*) m
@@ -104,6 +88,7 @@
     [menu release];
     [image release];
     [alt release];
+    [super dealloc];
 }
 
 -(void) setImage:(NSImage*) img { image = [img retain]; [self setNeedsDisplay:YES]; }

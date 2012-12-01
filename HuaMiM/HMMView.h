@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HMMView : NSView 
+@interface HMMView : NSView
+{
+    NSImage* bg;
+}
 @end
 
 
@@ -18,6 +21,14 @@
 
 
 @interface HMMStatusItemView : NSView <NSMenuDelegate>
+{
+    NSImage*      image;
+    NSImage*      alt;
+    BOOL          showingMenu;
+    
+    NSStatusItem* statusItem;
+    NSMenu*       menu;
+}
 
 -(id) initWithMenu:(NSMenu*) menu;
 
