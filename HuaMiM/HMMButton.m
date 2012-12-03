@@ -24,6 +24,7 @@
     [normalBg release];
     [hoverBg release];
     [trackingArea release];
+    [super dealloc];
 }
 
 -(void) setPressedBg:(NSImage*) image
