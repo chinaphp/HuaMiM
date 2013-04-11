@@ -254,14 +254,13 @@ void transformHMAC(unsigned char* len16, unsigned char* len32)
 }
 
 -(void)flagsChanged:(NSEvent *)theEvent {
-    flagShowFullPassword++;
-
     // ignore press down
-    if (flagShowFullPassword % 2 == 1) {
+    if ([theEvent modifierFlags] & NSAlternateKeyMask) {
         return;
     }
 
-    if ((flagShowFullPassword/2) % 2 == 0) {
+    flagShowFullPassword++;
+    if (flagShowFullPassword % 2 == 0) {
         resultLabel.frame = CGRectMake(12, 6, 137, 19);
     } else {
         resultLabel.frame = CGRectMake(12, 6, 160, 19);
