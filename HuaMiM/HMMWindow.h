@@ -27,7 +27,6 @@
     IBOutlet NSMenu*      statusMenu;
     
     HMMStatusItemView* statusView;
-    int flagShowFullPassword;
     
     NSUserDefaults* pref;
 }

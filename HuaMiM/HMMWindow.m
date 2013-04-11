@@ -36,7 +36,6 @@ void transformHMAC(unsigned char* len16, unsigned char* len32)
                             styleMask:aStyle //NSBorderlessWindowMask 
                               backing:bufferingType 
                                 defer:flag];
-    flagShowFullPassword = 0;
     
     if (self) { 
         [self setOpaque:NO];
@@ -259,8 +258,7 @@ void transformHMAC(unsigned char* len16, unsigned char* len32)
         return;
     }
 
-    flagShowFullPassword++;
-    if (flagShowFullPassword % 2 == 0) {
+    if (resultLabel.frame.size.width == 160) {
         resultLabel.frame = CGRectMake(12, 6, 137, 19);
     } else {
         resultLabel.frame = CGRectMake(12, 6, 160, 19);
