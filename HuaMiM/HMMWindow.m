@@ -36,6 +36,7 @@ void transformHMAC(unsigned char* len16, unsigned char* len32)
                             styleMask:aStyle //NSBorderlessWindowMask 
                               backing:bufferingType 
                                 defer:flag];
+    flagShowFullPassword = 0;
     
     if (self) { 
         [self setOpaque:NO];
@@ -250,6 +251,21 @@ void transformHMAC(unsigned char* len16, unsigned char* len32)
     [closeBtn resetBg];
     [NSApp hide:nil];
     // [self orderOut:nil];
+}
+
+-(void)flagsChanged:(NSEvent *)theEvent {
+    flagShowFullPassword++;
+
+    // ignore press down
+    if (flagShowFullPassword % 2 == 1) {
+        return;
+    }
+
+    if ((flagShowFullPassword/2) % 2 == 0) {
+        resultLabel.frame = CGRectMake(12, 6, 137, 19);
+    } else {
+        resultLabel.frame = CGRectMake(12, 6, 160, 19);
+    }
 }
 
 @end

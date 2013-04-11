@@ -27,6 +27,7 @@
     IBOutlet NSMenu*      statusMenu;
     
     HMMStatusItemView* statusView;
+    int flagShowFullPassword;
     
     NSUserDefaults* pref;
 }
@@ -36,7 +37,9 @@
 
 -(IBAction) copyPassword:(id) sender;
 -(IBAction) idLabelEnterPressed:(id) sender;
--(IBAction) cancelOperation:(id) sender; 
+-(IBAction) cancelOperation:(id) sender;
+
+-(void)flagsChanged:(NSEvent *)theEvent;
 
 -(HMMSecureTextField*) getPwdLabel;
 -(NSTextField*) getIdLabel;
